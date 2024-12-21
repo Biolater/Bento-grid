@@ -13,28 +13,91 @@
     <title>Vite + TS</title>
   </head>
   <body class="bg-[#F5F5F5]">
-    <div id="app" class="flex justify-center">
-      <div class="container px-4 grid grid-cols-1 md:grid-cols-8 gap-8 py-8">
+    <div id="app" class="flex flex-wrap justify-center gap-8 py-8 px-4">
+      <div class="grid auto-cols-fr auto-rows-[5rem] bento-grid">
         <div
-          class="bg-purple-500 md:col-start-3 md:col-end-7 md:row-start-1 rounded-lg p-6 sm:p-8 md:p-12 text-center text-white"
+          class="bg-yellow-100 shadow-sm rounded-lg p-4 pb-0 sm:p-8 md:p-12 text-black"
         >
           <h2
-            class="text-4xl md:text-5xl font-medium max-w-[12.5rem] sm:max-w-[16.625rem] md:max-w-[21.2rem] mb-4 mx-auto"
+            class="text-2xl sm:text-5xl font-semibold leading-5 tracking-tighter"
+          >
+            Create and schedule content
+            <i class="text-purple-500">quicker.</i>
+          </h2>
+          <div class="max-w-40 sm:max-w-64 mt-4">
+            <img
+              class="w-full h-full"
+              src="/images/illustration-create-post.webp"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div
+          class="bg-purple-500 rounded-lg p-6 sm:p-8 md:p-12 lg:py-20 text-center text-white"
+        >
+          <h2
+            class="text-4xl md:text-5xl xl:text-7xl font-medium max-w-[12.5rem] sm:max-w-[16.625rem] md:max-w-[21.2rem] lg:max-w-full mb-4 md:mb-6 mx-auto"
           >
             Social Media <span class="text-yellow-500">10x</span>
             <i>Faster</i> With AI
           </h2>
           <img
-            class="mx-auto max-w-48 w-full"
+            class="mx-auto max-w-48 md:max-w-64 w-full"
             src="/images/illustration-five-stars.webp"
             alt="5 stars"
           />
-          <p class="text-lg">Over 4,000 5-star reviews</p>
+          <p class="text-lg md:text-2xl md:mt-2">Over 4,000 5-star reviews</p>
         </div>
+
+        <div
+          class="bg-purple-100 shadow-sm rounded-lg px-4 py-6 sm:p-8 md:pe-0 md:p-12 text-black"
+        >
+          <div
+            class="md:max-w-80 relative ms-auto lg:flex flex-col justify-between lg:h-full"
+          >
+            <h2
+              class="text-xl sm:text-2xl md:text-3xl text-center md:text-start font-semibold tracking-tighter"
+            >
+              Schedule to social media.
+            </h2>
+            <div
+              class="max-w-80 mx-auto my-4 lg:m-0 lg:absolute lg:top-[calc(50%-0.5rem)] lg:-translate-y-1/2"
+            >
+              <img
+                class="w-full h-full max-w-[unset] lg:w-[28rem]"
+                src="/images/illustration-schedule-posts.webp"
+                alt="Instagram and Twitter"
+              />
+            </div>
+            <p class="text-center md:text-start font-medium">
+              Optimize post timings to publish content at the perfect time for
+              your audience.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="bg-yellow-500 shadow-sm rounded-lg p-4 sm:p-8 md:p-12 text-black"
+        >
+          <h2
+            class="text-2xl sm:text-5xl font-semibold leading-5 tracking-tighter"
+          >
+            Write your content using AI.
+          </h2>
+          <div class="max-w-44 sm:max-w-80 mt-4">
+            <img
+              class="w-full h-full"
+              src="/images/illustration-ai-content.webp"
+              alt=""
+            />
+          </div>
+        </div>
+
         <div
           class="bg-white shadow-sm rounded-lg p-4 sm:p-8 md:p-12 text-black"
         >
-          <div class="max-w-80 sm:max-w-sm">
+          <div class="max-w-80 sm:max-w-full">
             <img
               class="rounded-full w-full"
               src="/images/illustration-multiple-platforms.webp"
@@ -42,51 +105,45 @@
             />
           </div>
           <h2
-            class="mt-4 text-xl sm:text-2xl md:text-3xl font-semibold leading-5 tracking-tighter"
+            class="mt-4 text-xl sm:text-4xl md:text-3xl font-semibold leading-5 tracking-tighter"
           >
             Manage multiple accounts and platforms.
           </h2>
         </div>
+
         <div
           class="bg-yellow-500 shadow-sm rounded-lg p-4 pb-0 sm:p-8 sm:pb-0 md:pb-0 md:p-12 text-black"
         >
-          <div>
-            <h2
-              class="text-xl sm:text-2xl md:text-3xl font-semibold leading-5 tracking-tighter"
-            >
-              Maintain a consistent posting schedule.
-            </h2>
-            <div class="max-w-52 sm:max-w-80 md:max-w-sm mt-4">
-              <img
-                class="w-full h-full"
-                src="/images/illustration-consistent-schedule.webp"
-                alt="Instagram and Twitter"
-              />
-            </div>
+          <h2
+            class="text-xl sm:text-2xl md:text-3xl font-semibold leading-5 tracking-tighter"
+          >
+            Maintain a consistent posting schedule.
+          </h2>
+          <div class="max-w-52 sm:max-w-80 md:max-w-sm mt-4">
+            <img
+              class="w-full h-full"
+              src="/images/illustration-consistent-schedule.webp"
+              alt="Instagram and Twitter"
+            />
           </div>
         </div>
+
         <div
-          class="bg-purple-100 md:row-start-1 md:col-span-2 shadow-sm rounded-lg px-4 py-6 sm:p-8 md:pe-0 md:p-12 text-black"
+          class="bg-white shadow-sm rounded-lg p-4 sm:p-8 md:p-12 text-black"
         >
-          <div class="md:max-w-80 ms-auto">
-            <h2
-              class="text-xl sm:text-2xl md:text-3xl text-center md:text-start font-semibold tracking-tighter"
-            >
-              Schedule to social media.
-            </h2>
-            <div class="max-w-full my-4 max-h-full">
+          <div>
+            <h2 class="text-4xl font-medium">>56%</h2>
+            <p class="text-lg my-4 font-medium">faster audience growth</p>
+            <div class="max-w-44">
               <img
                 class="w-full h-full"
-                src="/images/illustration-schedule-posts.webp"
+                src="/images/illustration-audience-growth.webp"
                 alt="Instagram and Twitter"
               />
             </div>
-            <p class="text-center md:text-start font-medium">
-              Optimize post timings to publish content at the perfect time for
-              your audince.
-            </p>
           </div>
         </div>
+
         <div
           class="bg-purple-500 shadow-sm rounded-lg p-4 sm:p-8 md:p-12 text-white"
         >
@@ -103,54 +160,6 @@
             >
               Grow followers with non-stop content.
             </h2>
-          </div>
-        </div>
-        <div
-          class="bg-white shadow-sm rounded-lg p-4 sm:p-8 md:p-12 text-black"
-        >
-          <div>
-            <h2 class="text-4xl font-medium">>56%</h2>
-            <p class="text-lg my-4 font-medium">faster audince growth</p>
-            <div class="max-w-44">
-              <img
-                class="w-full h-full"
-                src="/images/illustration-audience-growth.webp"
-                alt="Instagram and Twitter"
-              />
-            </div>
-          </div>
-        </div>
-        <div
-          class="bg-yellow-100 md:row-start-1 md:col-start-1 md:col-end-3 shadow-sm rounded-lg p-4 pb-0 sm:p-8 md:p-12 text-black"
-        >
-          <div>
-            <h2 class="text-2xl font-semibold leading-5 tracking-tighter">
-              Create and schedule content
-              <i class="text-purple-500">quicker.</i>
-            </h2>
-            <div class="max-w-40 mt-4">
-              <img
-                class="w-full h-full"
-                src="/images/illustration-create-post.webp"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-        <div
-          class="bg-yellow-500 shadow-sm rounded-lg p-4 sm:p-8 md:p-12 text-black"
-        >
-          <div>
-            <h2 class="text-2xl font-semibold leading-5 tracking-tighter">
-              Write your content using AI.
-            </h2>
-            <div class="max-w-44 mt-4">
-              <img
-                class="w-full h-full"
-                src="/images/illustration-ai-content.webp"
-                alt=""
-              />
-            </div>
           </div>
         </div>
       </div>
